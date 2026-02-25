@@ -1,0 +1,18 @@
+venv/
+ENV/
+
+# Python bytecode
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Database
+db.sqlite3
+
+# Static and media
+media/
+static/
+
+# System files
+.DS_Store
+Thumbs.db
