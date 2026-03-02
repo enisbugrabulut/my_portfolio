@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 
+{% block title %}About | Enis{% endblock title %}
+
 {% block content %}
     <h1 class="display-3 fw-bold">Merhaba, Ben Enis.</h1>
     <p class="lead">Django ile hazırladığım portfolyo siteme hoş geldiniz.</p>
-    <a href="/projects" class="btn btn-lg btn-light fw-bold">Projelerimi Gör</a>
+    <div class="d-flex justify-content-center">
+        <a href="{% url 'core:projects' %}" class="btn custom-portfolio-btn">Projelerimi Gör</a>
+    </div>
 {% endblock content %}
