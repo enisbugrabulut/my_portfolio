@@ -13,8 +13,7 @@
 
 <body class="d-flex flex-column h-100">
 
-    <!-- HEADER: cover-container dışında, tam genişlik -->
-    <header class="w-100 px-4 py-3">
+    <header class="w-100 px-4 py-3 {% block header_class %}{% endblock header_class %}">
         <div class="d-flex align-items-center justify-content-between">
 
             <div style="min-width: 200px;">
@@ -42,7 +41,6 @@
         </div>
     </header>
 
-    <!-- MAIN: cover-container ile ortalanmış -->
     <main class="cover-container d-flex flex-column flex-grow-1 px-3 mx-auto text-center justify-content-center">
         {% block content %}
         {% endblock content %}

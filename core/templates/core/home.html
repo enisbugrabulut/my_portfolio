@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}About | Enis{% endblock title %}
+{% block header_class %}fade-in{% endblock %}
 
 {% block content %}
-    <h1 class="display-3 fw-bold">Merhaba, Ben Enis.</h1>
-    <p class="lead">Django ile hazırladığım portfolyo siteme hoş geldiniz.</p>
+    <h1 class="display-3 fw-bold typewriter"></h1>
+    <p class="lead fade-in">Django ile hazırladığım portfolyo siteme hoş geldiniz.</p>
     <div class="d-flex justify-content-center">
-        <a href="{% url 'core:projects' %}" class="btn custom-portfolio-btn">Projelerimi Gör</a>
+        <a href="{% url 'core:projects' %}" class="btn custom-portfolio-btn fade-in">Projelerimi Gör</a>
     </div>
 {% endblock content %}
