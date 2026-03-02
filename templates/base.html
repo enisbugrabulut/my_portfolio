@@ -1,6 +1,7 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="{{ LANGUAGE_CODE }}" class="h-100">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +22,10 @@
             </div>
 
             <nav class="nav nav-masthead justify-content-center gap-4">
-                <a href="{% url 'core:home' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
-                <a href="{% url 'core:about' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
-                <a href="{% url 'core:projects' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
-                <a href="{% url 'core:contact' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
+                <a href="{% url 'core:home' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'home' %}active{% endif %}">{% trans "Home" %}</a>
+                <a href="{% url 'core:about' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'about' %}active{% endif %}">{% trans "About" %}</a>
+                <a href="{% url 'core:projects' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">{% trans "Projects" %}</a>
+                <a href="{% url 'core:contact' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">{% trans "Contact" %}</a>
             </nav>
 
             <div class="d-flex gap-2" style="min-width: 200px; justify-content: flex-end;">
@@ -32,10 +33,15 @@
                     <button class="btn btn-outline-secondary" id="dark-mode-btn"><i class="bi bi-moon-fill"></i></button>
                     <button class="btn btn-outline-secondary" id="light-mode-btn"><i class="bi bi-sun-fill"></i></button>
                 </div>
-                <div class="btn-group btn-group-sm">
-                    <button class="btn btn-outline-secondary" id="lang-tr-btn">TR</button>
-                    <button class="btn btn-outline-secondary" id="lang-en-btn">EN</button>
-                </div>
+                <form action="{% url 'set_language' %}" method="post" class="d-flex">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ request.get_full_path }}">
+    
+                    <div class="btn-group btn-group-sm" role="group">
+                        <button type="submit" name="language" value="en" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'en' %}active{% endif %}">EN</button>
+                        <button type="submit" name="language" value="tr" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'tr' %}active{% endif %}">TR</button>
+                    </div>
+                </form>
             </div>
 
         </div>
@@ -46,8 +52,8 @@
         {% endblock content %}
     </main>
 
-    <footer class="w-100 text-center py-3">
-        <p class="mb-0">Portfolio by Enis.</p>
+    <footer class="w-100 text-center py-3 fade-in">
+        <p class="mb-0">{% trans "Portfolio by Enis." %}</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
