@@ -1,0 +1,12 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ request.LANGUAGE_CODE }}">
+<head>
+    <title>{% trans "Page Not Found" %}</title>
+</head>
+<body>
+    <h1>404</h1>
+    <p>{% trans "The page you are looking for may not exist or might have been moved." %}</p>
+    <a href="{% url 'home' %}">{% trans "Return to Home" %}</a>
+</body>
+</html>

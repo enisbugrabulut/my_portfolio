@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% load i18n %}
 
-{% block title %} {% trans "Home | Enis" %} {% endblock title %}
+{% block title %} {% trans "Home | EnisBuğraBulut" %} {% endblock title %}
 {% block header_class %}fade-in{% endblock %}
 
 {% block content %}
     <h1 class="display-3 fw-bold typewriter"></h1>
-    <p class="lead fade-in">{% trans "Welcome to my portfolio that has been made with Django."%}</p>
-    <span id="typewriter-source" style="display: none;">{% trans "Hello, I am Enis." %}</span>
+    <p class="lead fade-in">{% trans "Welcome to my personal website."%}</p>
+    <span id="typewriter-source" hidden>{% trans "Hello, I am Enis." %}</span>
     <div class="d-flex justify-content-center">
-        <a href="{% url 'core:projects' %}" class="btn custom-portfolio-btn fade-in">{% trans "See My Projects" %}</a>
+        <a href="{% url 'core:about' %}" class="btn custom-portfolio-btn fade-in">{% trans "Learn more about me" %}</a>
     </div>
 {% endblock content %}
