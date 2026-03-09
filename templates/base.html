@@ -16,37 +16,48 @@
 <body class="d-flex flex-column h-100">
 
     <header class="w-100 px-4 py-3 {% block header_class %}{% endblock header_class %}">
-        <div class="d-flex align-items-center justify-content-between">
+        <nav class="navbar navbar-expand-md p-0">
+            <div class="container-fluid p-0">
+                
+                <a class="navbar-brand m-0" href="{% url 'core:home' %}">
+                    <h3 class="mb-0 fs-4" style="color: var(--text-color);">Enis Buğra Bulut</h3>
+                </a>
 
-            <div style="min-width: 200px;">
-                <h3 class="mb-0">Enis Buğra Bulut</h3>
-            </div>
+                <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar">
+                    <span class="navbar-toggler-icon-custom">
+                        <i class="bi bi-list" style="font-size: 2rem; color: var(--text-color);"></i>
+                    </span>
+                </button>
 
-            <nav class="nav nav-masthead justify-content-center gap-4">
-                <a href="{% url 'core:home' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'home' %}active{% endif %}">{% trans "Home" %}</a>
-                <a href="{% url 'core:about' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'about' %}active{% endif %}">{% trans "About" %}</a>
-                <a href="{% url 'core:projects' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">{% trans "Projects" %}</a>
-                <a href="{% url 'core:contact' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">{% trans "Contact" %}</a>
-            </nav>
+                <div class="collapse navbar-collapse" id="portfolioNavbar">
+                    <div class="d-flex flex-column flex-md-row w-100 align-items-center">
+                        
+                        <nav class="nav nav-masthead mx-auto gap-3 mt-4 mt-md-0 text-center justify-content-center flex-column flex-md-row">
+                            <a href="{% url 'core:home' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'home' %}active{% endif %}">{% trans "Home" %}</a>
+                            <a href="{% url 'core:about' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'about' %}active{% endif %}">{% trans "About" %}</a>
+                            <a href="{% url 'core:projects' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">{% trans "Projects" %}</a>
+                            <a href="{% url 'core:contact' %}" class="nav-link fw-bold {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">{% trans "Contact" %}</a>
+                        </nav>
 
-            <div class="d-flex gap-2" style="min-width: 200px; justify-content: flex-end;">
-                <div class="btn-group btn-group-sm">
-                    <button class="btn btn-outline-secondary" id="dark-mode-btn"><i class="bi bi-moon-fill"></i></button>
-                    <button class="btn btn-outline-secondary" id="light-mode-btn"><i class="bi bi-sun-fill"></i></button>
-                </div>
-                <form action="{% url 'set_language' %}" method="POST" class="d-flex">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ request.get_full_path }}">
-    
-                    <div class="btn-group btn-group-sm" role="group">
-                        <button type="submit" name="language" value="en" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'en' %}active{% endif %}">EN</button>
-                        <button type="submit" name="language" value="tr" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'tr' %}active{% endif %}">TR</button>
+                        <div class="d-flex gap-3 justify-content-center order-first order-md-last mb-4 mb-md-0 pt-3 pt-md-0">
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn btn-outline-secondary" id="dark-mode-btn"><i class="bi bi-moon-fill"></i></button>
+                                <button class="btn btn-outline-secondary" id="light-mode-btn"><i class="bi bi-sun-fill"></i></button>
+                            </div>
+                            <form action="{% url 'set_language' %}" method="POST" class="d-flex">
+                                {% csrf_token %}
+                                <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                                <div class="btn-group btn-group-sm">
+                                    <button type="submit" name="language" value="en" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'en' %}active{% endif %}">EN</button>
+                                    <button type="submit" name="language" value="tr" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'tr' %}active{% endif %}">TR</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
-
-        </div>
-    </header>
+        </nav>
+</header>
 
     <main class="cover-container d-flex flex-column flex-grow-1 px-3 mx-auto text-center justify-content-center">
         {% block content %}
