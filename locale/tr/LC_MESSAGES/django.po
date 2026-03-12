@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-12 09:06+0300\n"
+"POT-Creation-Date: 2026-03-13 01:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Enis Buğra Bulut <enisbugra217@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,14 @@ msgid ""
 "                impact on people's lives, while ensuring that systems work "
 "together efficiently, optimally, and in harmony behind the scenes.\n"
 "                "
-msgstr "Merhaba! Ben Enis. Teknolojiye olan merakı küçük yaşlarda video oyunları ve bilgisayar parçalarını söküp takarak başlayan, bugün ise bu merakını dijital dünyada modern çözümler üretmeye dönüştüren bir yazılım geliştiriciyim. Python ekosisteminde uzmanlaşarak, sadece kod yazmayı değil, insanların hayatına dokunan kullanıcı dostu arayüzler tasarlamayı ve arka planda sistemlerin birbiriyle verimli, optimize ve uyum içinde çalışmasını sağlamayı bir tutku haline getirdim."
+msgstr ""
+"Merhaba! Ben Enis. Teknolojiye olan merakı küçük yaşlarda video oyunları ve "
+"bilgisayar parçalarını söküp takarak başlayan, bugün ise bu merakını dijital "
+"dünyada modern çözümler üretmeye dönüştüren bir yazılım geliştiriciyim. "
+"Python ekosisteminde uzmanlaşarak, sadece kod yazmayı değil, insanların "
+"hayatına dokunan kullanıcı dostu arayüzler tasarlamayı ve arka planda "
+"sistemlerin birbiriyle verimli, optimize ve uyum içinde çalışmasını "
+"sağlamayı bir tutku haline getirdim."
 
 #: .\core\templates\core\about.html:28
 msgid ""
@@ -52,7 +59,13 @@ msgid ""
 "                I see every new project not just as a technical task, but as "
 "an opportunity to learn something new and push my boundaries.\n"
 "                "
-msgstr "Geliştirme sürecinde temiz kod (clean code) prensiplerine, sürdürülebilir ve ölçeklenebilir mimarilere büyük önem veriyorum. Backend tarafındaki karmaşık mantıkları, frontend tarafında sade ve zarif tasarımlarla buluşturmak en keyif aldığım süreçlerden biri. Her yeni projeyi, sadece teknik bir görev olarak değil, yeni bir şeyler öğrenmek ve sınırları zorlamak için bir fırsat olarak görüyorum."
+msgstr ""
+"Geliştirme sürecinde temiz kod (clean code) prensiplerine, sürdürülebilir ve "
+"ölçeklenebilir mimarilere büyük önem veriyorum. Backend tarafındaki karmaşık "
+"mantıkları, frontend tarafında sade ve zarif tasarımlarla buluşturmak en "
+"keyif aldığım süreçlerden biri. Her yeni projeyi, sadece teknik bir görev "
+"olarak değil, yeni bir şeyler öğrenmek ve sınırları zorlamak için bir fırsat "
+"olarak görüyorum."
 
 #: .\core\templates\core\about.html:34
 msgid ""
@@ -63,7 +76,11 @@ msgid ""
 "digital transformation by providing simple and effective solutions \n"
 "                to complex problems.\n"
 "                "
-msgstr "Bireysel olarak kod yazmanın dışında, sürekli değişen teknolojik trendleri takip etmeyi, başkaları tarafından yazılan kodları incelemeyi, dökümantasyon okumayı seviyorum. Vizyonum, karmaşık sorunlara basit ve etkili çözümler getirerek dijital dönüşümün bir parçası olmak."
+msgstr ""
+"Bireysel olarak kod yazmanın dışında, sürekli değişen teknolojik trendleri "
+"takip etmeyi, başkaları tarafından yazılan kodları incelemeyi, dökümantasyon "
+"okumayı seviyorum. Vizyonum, karmaşık sorunlara basit ve etkili çözümler "
+"getirerek dijital dönüşümün bir parçası olmak."
 
 #: .\core\templates\core\about.html:42
 msgid "Areas I Work In / Have Experience In"
@@ -110,7 +127,7 @@ msgid "Automation:"
 msgstr "Otomasyon:"
 
 #: .\core\templates\core\about.html:73
-msgid "Game & Desktop"
+msgid " Game & Desktop"
 msgstr "Oyun & Masaüstü "
 
 #: .\core\templates\core\about.html:75
@@ -134,32 +151,49 @@ msgid "Google Project Management"
 msgstr "Google Proje Yönetimi"
 
 #: .\core\templates\core\about.html:93
-msgid "Ecosystem and Social"
-msgstr "Ekosistem ve Sosyal"
+msgid "Education and Social"
+msgstr "Eğitim ve Sosyal"
 
 #: .\core\templates\core\about.html:98
+msgid "Manisa Celal Bayar University"
+msgstr "Manisa Celal Bayar Üniversitesi"
+
+#: .\core\templates\core\about.html:99
+msgid "Graduated (2020-2025)"
+msgstr "Mezun (2020-2025)"
+
+#: .\core\templates\core\about.html:100
+msgid "English Preparatory Program (1 Year)"
+msgstr "İngilizce Hazırlık (1 Yıl)"
+
+#: .\core\templates\core\about.html:100
+#, python-format
+msgid "B.Sc. in Computer Engineering (%%100 English)"
+msgstr "Bilgisayar Mühendisliği Lisans Bölümü (%100 İngilizce)"
+
+#: .\core\templates\core\about.html:106
 msgid "Google Academy of Artificial Intelligence and Technology"
 msgstr "Google Yapay Zeka Ve Teknoloji Akademisi"
 
-#: .\core\templates\core\about.html:99
+#: .\core\templates\core\about.html:107
 msgid "Academy Student (2021-2022)"
 msgstr "Akademi Öğrencisi (2021-2022)"
 
-#: .\core\templates\core\about.html:100
+#: .\core\templates\core\about.html:108
 msgid ""
 "I took courses in game development, project management, and entrepreneurship."
 msgstr ""
 "Oyun geliştirme, proje yönetimi ve girişimcilik alanlarında eğitimler aldım."
 
-#: .\core\templates\core\about.html:106
+#: .\core\templates\core\about.html:114
 msgid "LÖSEV Volunteer"
 msgstr "LÖSEV Gönüllüsü"
 
-#: .\core\templates\core\about.html:107
+#: .\core\templates\core\about.html:115
 msgid "Volunteer Supporter (Active)"
 msgstr "Gönüllü (Aktif)"
 
-#: .\core\templates\core\about.html:108
+#: .\core\templates\core\about.html:116
 msgid ""
 "With a sense of social responsibility, I support community awareness "
 "campaigns."
@@ -167,15 +201,15 @@ msgstr ""
 "Sosyal sorumluluk bilinciyle toplumsal farkındalık kampanyalarına destek "
 "veriyorum."
 
-#: .\core\templates\core\about.html:114
+#: .\core\templates\core\about.html:122
 msgid "Erasmus+ Exchange Student"
 msgstr "Erasmus+ Değişim Öğrencisi"
 
-#: .\core\templates\core\about.html:115
+#: .\core\templates\core\about.html:123
 msgid "Studying Abroad Experience (2023)"
 msgstr "Yurtdışı Eğitim Deneyimi (2023)"
 
-#: .\core\templates\core\about.html:116
+#: .\core\templates\core\about.html:124
 msgid ""
 "My Erasmus experience in Almeria, Spain, gave me the chance to work with "
 "different cultures and gain a global perspective."
@@ -183,15 +217,15 @@ msgstr ""
 "İspanya’nın Almeria şehrindeki Erasmus deneyimim, farklı kültürlerle "
 "çalışarak küresel bir bakış açısı kazanmamı sağladı."
 
-#: .\core\templates\core\about.html:122
+#: .\core\templates\core\about.html:130
 msgid "Siber Vatan Programme"
 msgstr "Siber Vatan Programı"
 
-#: .\core\templates\core\about.html:123
+#: .\core\templates\core\about.html:131
 msgid "Program student (2023-2024)"
 msgstr "Program öğrencisi (2023-2024)"
 
-#: .\core\templates\core\about.html:124
+#: .\core\templates\core\about.html:132
 msgid ""
 "I participated in a comprehensive training and practical camp organized as "
 "part of cybersecurity training programs."
@@ -251,7 +285,7 @@ msgstr "Projeler"
 msgid "Contact"
 msgstr "İletişim"
 
-#: .\templates\base.html:69
+#: .\templates\base.html:72
 msgid "Portfolio | All rights reserved."
 msgstr "Portfolio | Tüm hakları saklıdır."
 

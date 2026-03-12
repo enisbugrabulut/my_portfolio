@@ -50,4 +50,23 @@ document.addEventListener('DOMContentLoaded', () => {
     type();
 
     }
+
+    // Go to Top Buton Kontrolü
+    const goTopBtn = document.getElementById('goTop');
+    
+    if (goTopBtn) {
+        window.onscroll = function() {
+            // Sayfa 300px aşağı inince butonu göster
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                goTopBtn.style.display = "flex";
+            } else {
+                goTopBtn.style.display = "none";
+            }
+        };
+
+        goTopBtn.onclick = function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    }
 });

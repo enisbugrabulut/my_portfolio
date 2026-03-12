@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <h5 class="fw-bold"style="color: var(--text-color);"><i class="bi bi-controller"></i>{% trans "Game & Desktop" %}</h5>
+                        <h5 class="fw-bold"style="color: var(--text-color);"><i class="bi bi-controller"></i>{% trans " Game & Desktop" %}</h5>
                         <ul class="skill-list">
                             <li><strong>Unity:</strong> {% trans "2D & 3D Game Dev (C#, PC-Mobil)" %}</li>
                             <li><strong>{% trans "Desktop:" %}</strong> Python Turtle</li>
@@ -90,9 +90,17 @@
             </div>
 
             <div class="social-impact-section mt-5 pt-4">
-                <h3 class="fw-bold mb-4" style="color: var(--text-color);">{% trans "Ecosystem and Social" %}</h3>
+                <h3 class="fw-bold mb-4" style="color: var(--text-color);">{% trans "Education and Social" %}</h3>
 
                 <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="social-card p-3 h-100">
+                            <h5 class="fw-bold" style="color: var(--text-color);"><i class="bi bi-mortarboard-fill"></i> {% trans "Manisa Celal Bayar University" %}</h5>
+                            <h6 class="social-role">{% trans "Graduated (2020-2025)" %}</h6>
+                            <p class="small mb-0">{% trans "English Preparatory Program (1 Year)" %}<br>{% trans "B.Sc. in Computer Engineering (%100 English)" %}</p>
+                        </div>
+                    </div>
+
                     <div class="col-md-6">
                         <div class="social-card p-3 h-100">
                             <h5 class="fw-bold" style="color: var(--btn-border);"><i class="bi bi-google"></i> {% trans "Google Academy of Artificial Intelligence and Technology" %}</h5>
@@ -129,4 +137,11 @@
         </div>
     </div>
 </section>
+
+{% block scroll_button %}
+<a href="#" id="goTop" class="go-top-btn shadow">
+    <i class="bi bi-arrow-up-short"></i>
+</a>
+{% endblock scroll_button %}
+
 {% endblock content %}

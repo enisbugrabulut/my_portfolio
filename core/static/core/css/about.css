@@ -108,3 +108,47 @@
 .social-card i {
     color: var(--btn-border); /* İkonlar için tema rengi*/
 }
+
+/* ------------------SCROLL BUTTON------------------*/
+
+/* Go to Top Butonu - Temaya Özel */
+.go-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    display: none; /* JS tarafından yönetiliyor */
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    font-size: 28px;
+    text-decoration: none;
+    
+    /* GÜNDÜZ MODU RENKLERİ */
+    background-color: #f8f9fa; /* Açık arka plan */
+    color: #333;               /* Koyu ikon */
+    border: 2px solid #ccc;    /* Hafif gri çerçeve */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.go-top-btn:hover {
+    transform: translateY(-5px);
+    background-color: #eee;
+}
+
+/* GECE (DARK) MODU RENKLERİ */
+body.dark-mode .go-top-btn {
+    background-color: #1e1e1e; /* Koyu arka plan */
+    color: #ffffff;            /* Beyaz ikon */
+    border: 2px solid #444;    /* Koyu gri çerçeve */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .go-top-btn:hover {
+    background-color: #333;
+    border-color: #666; /* Hover'da belirginleşen çerçeve */
+}

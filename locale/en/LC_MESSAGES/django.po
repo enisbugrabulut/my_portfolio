@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-12 09:06+0300\n"
+"POT-Creation-Date: 2026-03-13 01:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgid "Automation:"
 msgstr ""
 
 #: .\core\templates\core\about.html:73
-msgid "Game & Desktop"
+msgid " Game & Desktop"
 msgstr ""
 
 #: .\core\templates\core\about.html:75
@@ -134,59 +134,76 @@ msgid "Google Project Management"
 msgstr ""
 
 #: .\core\templates\core\about.html:93
-msgid "Ecosystem and Social"
+msgid "Education and Social"
 msgstr ""
 
 #: .\core\templates\core\about.html:98
-msgid "Google Academy of Artificial Intelligence and Technology"
+msgid "Manisa Celal Bayar University"
 msgstr ""
 
 #: .\core\templates\core\about.html:99
-msgid "Academy Student (2021-2022)"
+msgid "Graduated (2020-2025)"
 msgstr ""
 
 #: .\core\templates\core\about.html:100
+msgid "English Preparatory Program (1 Year)"
+msgstr ""
+
+#: .\core\templates\core\about.html:100
+#, python-format
+msgid "B.Sc. in Computer Engineering (%%100 English)"
+msgstr ""
+
+#: .\core\templates\core\about.html:106
+msgid "Google Academy of Artificial Intelligence and Technology"
+msgstr ""
+
+#: .\core\templates\core\about.html:107
+msgid "Academy Student (2021-2022)"
+msgstr ""
+
+#: .\core\templates\core\about.html:108
 msgid ""
 "I took courses in game development, project management, and entrepreneurship."
 msgstr ""
 
-#: .\core\templates\core\about.html:106
+#: .\core\templates\core\about.html:114
 msgid "LÖSEV Volunteer"
 msgstr ""
 
-#: .\core\templates\core\about.html:107
+#: .\core\templates\core\about.html:115
 msgid "Volunteer Supporter (Active)"
 msgstr ""
 
-#: .\core\templates\core\about.html:108
+#: .\core\templates\core\about.html:116
 msgid ""
 "With a sense of social responsibility, I support community awareness "
 "campaigns."
 msgstr ""
 
-#: .\core\templates\core\about.html:114
+#: .\core\templates\core\about.html:122
 msgid "Erasmus+ Exchange Student"
 msgstr ""
 
-#: .\core\templates\core\about.html:115
+#: .\core\templates\core\about.html:123
 msgid "Studying Abroad Experience (2023)"
 msgstr ""
 
-#: .\core\templates\core\about.html:116
+#: .\core\templates\core\about.html:124
 msgid ""
 "My Erasmus experience in Almeria, Spain, gave me the chance to work with "
 "different cultures and gain a global perspective."
 msgstr ""
 
-#: .\core\templates\core\about.html:122
+#: .\core\templates\core\about.html:130
 msgid "Siber Vatan Programme"
 msgstr ""
 
-#: .\core\templates\core\about.html:123
+#: .\core\templates\core\about.html:131
 msgid "Program student (2023-2024)"
 msgstr ""
 
-#: .\core\templates\core\about.html:124
+#: .\core\templates\core\about.html:132
 msgid ""
 "I participated in a comprehensive training and practical camp organized as "
 "part of cybersecurity training programs."
@@ -244,7 +261,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: .\templates\base.html:69
+#: .\templates\base.html:72
 msgid "Portfolio | All rights reserved."
 msgstr ""
 
