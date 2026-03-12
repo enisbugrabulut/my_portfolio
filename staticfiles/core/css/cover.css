@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #fdfaf6;
+  --text-color: #2c3e50;
+  --link-color: rgba(44, 62, 80, 0.5);
+  --active-color: #2c3e50;
+  --btn-border: #2c3e50;
+}
+
+body.dark-mode {
+  --bg-color: #212529;
+  --text-color: #ffffff;
+  --link-color: rgba(255, 255, 255, 0.5);
+  --active-color: #ffffff;
+  --btn-border: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.nav-masthead .nav-link {
+  color: var(--link-color) !important;
+  border-bottom: .25rem solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-masthead .nav-link.active {
+  color: var(--active-color) !important;
+  border-bottom-color: var(--active-color) !important;
+}
+
+.btn-outline-secondary {
+  border-color: var(--btn-border) !important;
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-secondary.active {
+  background-color: var(--text-color) !important;
+  color: var(--bg-color) !important;
+}
+
+.custom-portfolio-btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  border-color: var(--btn-border) !important;
+  color: var(--bg-color) !important;
+  background-color: var(--text-color) !important;
+  width: auto;
+  white-space: nowrap;
+}
+
+.custom-portfolio-btn:hover {
+  opacity: 0.85;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  color: var(--active-color) !important;
+  border-bottom-color: rgba(44, 62, 80, 0.25);
+}
+
+body.dark-mode .nav-masthead .nav-link:hover,
+body.dark-mode .nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.4s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}

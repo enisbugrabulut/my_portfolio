@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-06 04:00+0300\n"
+"POT-Creation-Date: 2026-03-12 09:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Enis Buğra Bulut <enisbugra217@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,202 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\core\templates\core\about.html:4
+#: .\core\templates\core\about.html:5
 msgid "About | EnisBuğraBulut"
 msgstr "Hakkımda | EnisBuğraBulut"
+
+#: .\core\templates\core\about.html:20
+msgid "Who is Enis Buğra Bulut ?"
+msgstr "Enis Buğra Bulut Kimdir ?"
+
+#: .\core\templates\core\about.html:21
+msgid ""
+"\n"
+"                Hello! I'm Enis. My curiosity for technology began at an "
+"early age through video games and by taking apart and reassembling computer "
+"components. \n"
+"                Today, that curiosity has evolved into a passion for "
+"creating modern solutions in the digital world as a software developer. \n"
+"                By specializing in the Python ecosystem, I focus not only on "
+"writing code but also on designing user-friendly interfaces that make a "
+"real \n"
+"                impact on people's lives, while ensuring that systems work "
+"together efficiently, optimally, and in harmony behind the scenes.\n"
+"                "
+msgstr "Merhaba! Ben Enis. Teknolojiye olan merakı küçük yaşlarda video oyunları ve bilgisayar parçalarını söküp takarak başlayan, bugün ise bu merakını dijital dünyada modern çözümler üretmeye dönüştüren bir yazılım geliştiriciyim. Python ekosisteminde uzmanlaşarak, sadece kod yazmayı değil, insanların hayatına dokunan kullanıcı dostu arayüzler tasarlamayı ve arka planda sistemlerin birbiriyle verimli, optimize ve uyum içinde çalışmasını sağlamayı bir tutku haline getirdim."
+
+#: .\core\templates\core\about.html:28
+msgid ""
+"\n"
+"                During the development process, I place great importance on "
+"clean code principles and building sustainable, scalable architectures. \n"
+"                One of the aspects I enjoy most is bringing together complex "
+"backend logic with simple and elegant frontend designs. \n"
+"                I see every new project not just as a technical task, but as "
+"an opportunity to learn something new and push my boundaries.\n"
+"                "
+msgstr "Geliştirme sürecinde temiz kod (clean code) prensiplerine, sürdürülebilir ve ölçeklenebilir mimarilere büyük önem veriyorum. Backend tarafındaki karmaşık mantıkları, frontend tarafında sade ve zarif tasarımlarla buluşturmak en keyif aldığım süreçlerden biri. Her yeni projeyi, sadece teknik bir görev olarak değil, yeni bir şeyler öğrenmek ve sınırları zorlamak için bir fırsat olarak görüyorum."
+
+#: .\core\templates\core\about.html:34
+msgid ""
+"\n"
+"                Beyond writing code individually, I enjoy keeping up with "
+"constantly evolving technology trends, analyzing code written by others, \n"
+"                and reading documentation. My vision is to become a part of "
+"digital transformation by providing simple and effective solutions \n"
+"                to complex problems.\n"
+"                "
+msgstr "Bireysel olarak kod yazmanın dışında, sürekli değişen teknolojik trendleri takip etmeyi, başkaları tarafından yazılan kodları incelemeyi, dökümantasyon okumayı seviyorum. Vizyonum, karmaşık sorunlara basit ve etkili çözümler getirerek dijital dönüşümün bir parçası olmak."
+
+#: .\core\templates\core\about.html:42
+msgid "Areas I Work In / Have Experience In"
+msgstr "Uğraştığım / Deneyim Sahibi Olduğum Alanlar"
+
+#: .\core\templates\core\about.html:46
+msgid "Backend Development"
+msgstr "Backend Geliştirme"
+
+#: .\core\templates\core\about.html:48
+msgid "Web Application:"
+msgstr "Web Uygulaması:"
+
+#: .\core\templates\core\about.html:49
+msgid "Desktop Application:"
+msgstr "Masaüstü Uygulaması:"
+
+#: .\core\templates\core\about.html:55
+msgid "Web Security"
+msgstr "Web Güvenliği"
+
+#: .\core\templates\core\about.html:57
+msgid "Parameter Tampering"
+msgstr "Parametre Manipülasyonu"
+
+#: .\core\templates\core\about.html:58
+msgid "Vulnerability Analysis (XSS, SQLi, IDOR)"
+msgstr "Zafiyet Analizi (XSS, SQLi, IDOR)"
+
+#: .\core\templates\core\about.html:63
+msgid "Data Science & Automation"
+msgstr "Veri Bilimi & Otomasyon"
+
+#: .\core\templates\core\about.html:66
+msgid "Data Science:"
+msgstr "Veri Bilimi:"
+
+#: .\core\templates\core\about.html:67
+msgid "Image Processing:"
+msgstr "Görüntü İşleme:"
+
+#: .\core\templates\core\about.html:68
+msgid "Automation:"
+msgstr "Otomasyon:"
+
+#: .\core\templates\core\about.html:73
+msgid "Game & Desktop"
+msgstr "Oyun & Masaüstü "
+
+#: .\core\templates\core\about.html:75
+msgid "2D & 3D Game Dev (C#, PC-Mobil)"
+msgstr "2D & 3D Oyun Geliştirme (C#, PC-Mobil)"
+
+#: .\core\templates\core\about.html:76
+msgid "Desktop:"
+msgstr "Masaüstü:"
+
+#: .\core\templates\core\about.html:81
+msgid "Others"
+msgstr "Diğerleri"
+
+#: .\core\templates\core\about.html:85
+msgid "Version Controller: Git/GitHub"
+msgstr "Versiyon Kontrolcüsü: Git/GitHub"
+
+#: .\core\templates\core\about.html:86
+msgid "Google Project Management"
+msgstr "Google Proje Yönetimi"
+
+#: .\core\templates\core\about.html:93
+msgid "Ecosystem and Social"
+msgstr "Ekosistem ve Sosyal"
+
+#: .\core\templates\core\about.html:98
+msgid "Google Academy of Artificial Intelligence and Technology"
+msgstr "Google Yapay Zeka Ve Teknoloji Akademisi"
+
+#: .\core\templates\core\about.html:99
+msgid "Academy Student (2021-2022)"
+msgstr "Akademi Öğrencisi (2021-2022)"
+
+#: .\core\templates\core\about.html:100
+msgid ""
+"I took courses in game development, project management, and entrepreneurship."
+msgstr ""
+"Oyun geliştirme, proje yönetimi ve girişimcilik alanlarında eğitimler aldım."
+
+#: .\core\templates\core\about.html:106
+msgid "LÖSEV Volunteer"
+msgstr "LÖSEV Gönüllüsü"
+
+#: .\core\templates\core\about.html:107
+msgid "Volunteer Supporter (Active)"
+msgstr "Gönüllü (Aktif)"
+
+#: .\core\templates\core\about.html:108
+msgid ""
+"With a sense of social responsibility, I support community awareness "
+"campaigns."
+msgstr ""
+"Sosyal sorumluluk bilinciyle toplumsal farkındalık kampanyalarına destek "
+"veriyorum."
+
+#: .\core\templates\core\about.html:114
+msgid "Erasmus+ Exchange Student"
+msgstr "Erasmus+ Değişim Öğrencisi"
+
+#: .\core\templates\core\about.html:115
+msgid "Studying Abroad Experience (2023)"
+msgstr "Yurtdışı Eğitim Deneyimi (2023)"
+
+#: .\core\templates\core\about.html:116
+msgid ""
+"My Erasmus experience in Almeria, Spain, gave me the chance to work with "
+"different cultures and gain a global perspective."
+msgstr ""
+"İspanya’nın Almeria şehrindeki Erasmus deneyimim, farklı kültürlerle "
+"çalışarak küresel bir bakış açısı kazanmamı sağladı."
+
+#: .\core\templates\core\about.html:122
+msgid "Siber Vatan Programme"
+msgstr "Siber Vatan Programı"
+
+#: .\core\templates\core\about.html:123
+msgid "Program student (2023-2024)"
+msgstr "Program öğrencisi (2023-2024)"
+
+#: .\core\templates\core\about.html:124
+msgid ""
+"I participated in a comprehensive training and practical camp organized as "
+"part of cybersecurity training programs."
+msgstr ""
+"Siber güvenlik eğitim programları kapsamında düzenlenen kapsamlı bir eğitim "
+"ve uygulama kampına katıldım."
 
 #: .\core\templates\core\contact.html:4
 msgid "Contact | EnisBuğraBulut"
 msgstr "İletişim | EnisBuğraBulut"
 
 #: .\core\templates\core\home.html:4
-#, fuzzy
-#| msgid "Home | Enis"
 msgid "Home | EnisBuğraBulut"
 msgstr "Ana Sayfa | EnisBuğraBulut"
-
-#: .\core\templates\core\home.html:9
-msgid "Welcome to my personal website."
-msgstr "Kişisel web siteme hoşgeldiniz."
 
 #: .\core\templates\core\home.html:10
 msgid "Hello, I am Enis."
 msgstr "Merhaba, ben Enis."
+
+#: .\core\templates\core\home.html:11
+msgid "Welcome to my personal website."
+msgstr "Kişisel web siteme hoşgeldiniz."
 
 #: .\core\templates\core\home.html:12
 msgid "Learn more about me"
@@ -48,37 +223,37 @@ msgstr "Hakkımda daha fazlası"
 msgid "Projects | EnisBuğraBulut"
 msgstr "Projeler | EnisBuğraBulut"
 
-#: .\templates\404.html:5
-msgid "Page Not Found"
-msgstr "Sayfa Bulunamadı"
+#: .\templates\404.html:6
+msgid "404"
+msgstr ""
 
-#: .\templates\404.html:9
+#: .\templates\404.html:7
 msgid "The page you are looking for may not exist or might have been moved."
 msgstr "Aradığınız sayfa mevcut değil veya taşınmış olabilir."
 
-#: .\templates\404.html:10
+#: .\templates\404.html:9
 msgid "Return to Home"
 msgstr "Ana Sayfaya Dön"
 
-#: .\templates\base.html:26
+#: .\templates\base.html:37
 msgid "Home"
 msgstr "Ana Sayfa"
 
-#: .\templates\base.html:27
+#: .\templates\base.html:38
 msgid "About"
 msgstr "Hakkımda"
 
-#: .\templates\base.html:28
+#: .\templates\base.html:39
 msgid "Projects"
 msgstr "Projeler"
 
-#: .\templates\base.html:29
+#: .\templates\base.html:40
 msgid "Contact"
 msgstr "İletişim"
 
-#: .\templates\base.html:57
-msgid "Portfolio by Enis."
-msgstr "Enis'in Portfolyosu."
+#: .\templates\base.html:69
+msgid "Portfolio | All rights reserved."
+msgstr "Portfolio | Tüm hakları saklıdır."
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"
@@ -1324,6 +1499,9 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "Page Not Found"
+#~ msgstr "Sayfa Bulunamadı"
 
 #~ msgid "Welcome to my portfolio that has been made with Django."
 #~ msgstr "Django ile hazırladığım portfolyo siteme hoş geldiniz."

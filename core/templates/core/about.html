@@ -1,9 +1,132 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load static %}
 
 {% block title %} {% trans "About | EnisBuğraBulut" %} {% endblock title %}
 
+{% block about_css %}
+    <link href="{% static 'core/css/about.css' %}" rel="stylesheet">
+{% endblock about_css %}
+
 {% block content %}
-    <h1 class="display-3 fw-bold">Merhaba, Ben Enis.</h1>
-    <p class="lead">Burası kendimi tanıtacağım yer.</p>
+<section class="container-fluid px-4 py-5">
+    <div class="about-section">
+        
+        <div class="profile-img-container">
+            <img src="{% static 'core/images/profil.jpeg' %}" alt="Enis Buğra Bulut">
+        </div>
+
+        <div class="about-text-content">
+            <h1 class="fw-bold">{% trans "Who is Enis Buğra Bulut ?" %}</h1>
+            <p> {% blocktranslate %}
+                Hello! I'm Enis. My curiosity for technology began at an early age through video games and by taking apart and reassembling computer components. 
+                Today, that curiosity has evolved into a passion for creating modern solutions in the digital world as a software developer. 
+                By specializing in the Python ecosystem, I focus not only on writing code but also on designing user-friendly interfaces that make a real 
+                impact on people's lives, while ensuring that systems work together efficiently, optimally, and in harmony behind the scenes.
+                {% endblocktranslate %}
+            </p>
+            <p> {% blocktranslate %}
+                During the development process, I place great importance on clean code principles and building sustainable, scalable architectures. 
+                One of the aspects I enjoy most is bringing together complex backend logic with simple and elegant frontend designs. 
+                I see every new project not just as a technical task, but as an opportunity to learn something new and push my boundaries.
+                {% endblocktranslate %}
+            </p>
+            <p> {% blocktranslate %}
+                Beyond writing code individually, I enjoy keeping up with constantly evolving technology trends, analyzing code written by others, 
+                and reading documentation. My vision is to become a part of digital transformation by providing simple and effective solutions 
+                to complex problems.
+                {% endblocktranslate %}
+            </p>
+
+            <div class="skills-section mt-5">
+                <h3 class="fw-bold mb-4" style="color: var(--text-color);">{% trans "Areas I Work In / Have Experience In" %}</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h5 class="fw-bold" style="color: var(--text-color);"><i class="bi bi-code-slash"></i> {% trans "Backend Development" %}</h5>
+                        <ul class="skill-list">
+                            <li><strong>{% trans "Web Application:" %} </strong>Python & Django</li>
+                            <li><strong>{% trans "Desktop Application:" %} </strong>Python & Tkinter/wxPython</li>
+                            <li><strong>Database: </strong>PostgreSQL, SQLite, Firebase</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="fw-bold" style="color: var(--text-color);"><i class="bi bi-shield-lock"></i> {% trans "Web Security" %}</h5>
+                        <ul class="skill-list">
+                            <li>{% trans "Parameter Tampering" %}</li>
+                            <li>{% trans "Vulnerability Analysis (XSS, SQLi, IDOR)" %}</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="fw-bold" style="color: var(--text-color);"><i class="bi bi-graph-up"></i> {% trans "Data Science & Automation" %}</h5>
+                        <ul class="skill-list">
+                            <li><strong>AI & ML:</strong> TensorFlow, Scikit-learn</li>
+                            <li><strong>{% trans "Data Science:" %}</strong> NumPy, Matplotlib</li>
+                            <li><strong>{% trans "Image Processing:" %}</strong> OpenCV</li>
+                            <li><strong>{% trans "Automation:" %}</strong> Selenium</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="fw-bold"style="color: var(--text-color);"><i class="bi bi-controller"></i>{% trans "Game & Desktop" %}</h5>
+                        <ul class="skill-list">
+                            <li><strong>Unity:</strong> {% trans "2D & 3D Game Dev (C#, PC-Mobil)" %}</li>
+                            <li><strong>{% trans "Desktop:" %}</strong> Python Turtle</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="fw-bold"style="color: var(--text-color);"><i class="bi bi-terminal"></i> {% trans "Others" %}</h5>
+                        <ul class="skill-list">
+                            <li>Threading</li>
+                            <li>Linux (Kali)</li>
+                            <li>{% trans "Version Controller: Git/GitHub" %}</li>
+                            <li>{% trans "Google Project Management" %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-impact-section mt-5 pt-4">
+                <h3 class="fw-bold mb-4" style="color: var(--text-color);">{% trans "Ecosystem and Social" %}</h3>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="social-card p-3 h-100">
+                            <h5 class="fw-bold" style="color: var(--btn-border);"><i class="bi bi-google"></i> {% trans "Google Academy of Artificial Intelligence and Technology" %}</h5>
+                            <h6 class="social-role">{% trans "Academy Student (2021-2022)" %}</h6>
+                            <p class="small mb-0">{% trans "I took courses in game development, project management, and entrepreneurship." %}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="social-card p-3 h-100">
+                            <h5 class="fw-bold" style="color: var(--btn-border);"><i class="bi bi-heart-fill"></i> {% trans "LÖSEV Volunteer" %}</h5>
+                            <h6 class="social-role">{% trans "Volunteer Supporter (Active)" %}</h6>
+                            <p class="small mb-0">{% trans "With a sense of social responsibility, I support community awareness campaigns." %}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="social-card p-3 h-100">
+                            <h5 class="fw-bold" style="color: var(--btn-border);"><i class="bi bi-globe-americas"></i> {% trans "Erasmus+ Exchange Student" %}</h5>
+                            <h6 class="social-role">{% trans "Studying Abroad Experience (2023)" %}</h6>
+                            <p class="small mb-0">{% trans "My Erasmus experience in Almeria, Spain, gave me the chance to work with different cultures and gain a global perspective." %}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="social-card p-3 h-100">
+                            <h5 class="fw-bold" style="color: var(--btn-border);"><i class="bi bi-shield-check"></i>{% trans "Siber Vatan Programme" %}</h5>
+                            <h6 class="social-role">{% trans "Program student (2023-2024)" %}</h6>
+                            <p class="small mb-0">{% trans "I participated in a comprehensive training and practical camp organized as part of cybersecurity training programs." %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}

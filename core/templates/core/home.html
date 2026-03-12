@@ -5,10 +5,10 @@
 {% block header_class %}fade-in{% endblock %}
 
 {% block content %}
-    <h1 class="display-3 fw-bold typewriter"></h1>
-    <p class="lead fade-in">{% trans "Welcome to my personal website."%}</p>
-    <span id="typewriter-source" hidden>{% trans "Hello, I am Enis." %}</span>
-    <div class="d-flex justify-content-center">
+    <div class="h-100 d-flex flex-column align-items-center justify-content-center text-center">
+        <h1 class="display-3 fw-bold typewriter"></h1>
+        <span id="typewriter-source" hidden>{% trans "Hello, I am Enis." %}</span>
+        <p class="lead fade-in">{% trans "Welcome to my personal website."%}</p>
         <a href="{% url 'core:about' %}" class="btn custom-portfolio-btn fade-in">{% trans "Learn more about me" %}</a>
     </div>
 {% endblock content %}

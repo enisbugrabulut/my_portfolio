@@ -1,0 +1,110 @@
+.about-section {
+    display: flex;
+    gap: 6rem; /* Resim ve yazı arasındaki boşluk */
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.profile-img-container img {
+    width: 250px; /* Resim boyutları */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--btn-border); /* Çerçeve için */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Hareket için */
+}
+
+.profile-img-container img:hover {
+    transform: scale(1.1); /* Hover effect büyüme oranı */
+}
+
+.about-text-content {
+    /* Yazıların yayıldığı pixel aralığı */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0px; /* Harfler arası mesafe */
+    color: var(--text-color) !important;
+}
+
+.about-text-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-color) !important; 
+    line-height: 2;
+    opacity: 0.9;
+    text-align: left;
+}
+
+/* Mobil için*/
+@media (max-width: 768px) {
+    .about-section {
+        gap: 3rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text-content p {
+        text-align: center;
+    }
+
+    .skill-list {
+        display: inline-block; 
+        text-align: left;      
+    }
+
+    .col-md-6, .col-md-4 {
+        text-align: center; 
+    }
+}
+
+
+/* ------------------SKILL SECTION------------------*/
+
+.social-impact-section h3, 
+.about-text-content h1,
+.skills-section h3 {
+    border-bottom: 2px solid var(--btn-border);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 2rem;
+}
+
+.skill-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+/* Maddeler için işaret */
+.skill-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--btn-border);
+    font-weight: bold;
+}
+
+.social-role {
+    color: var(--text-color);
+    opacity: 0.7;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.social-card i {
+    color: var(--btn-border); /* İkonlar için tema rengi*/
+}

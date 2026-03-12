@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="{% static 'core/icon/favicon-enis-3232.png' %}">
     <link href="{% static 'core/css/cover.css' %}" rel="stylesheet">
+    {% block about_css %}{% endblock about_css %}
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -59,13 +60,13 @@
         </nav>
 </header>
 
-    <main class="cover-container d-flex flex-column flex-grow-1 px-3 mx-auto text-center justify-content-center">
+    <main class="flex-grow-1">
         {% block content %}
         {% endblock content %}
     </main>
 
     <footer class="w-100 text-center py-3">
-        <p class="mb-0">{% trans "Portfolio by Enis." %}</p>
+        <p class="mb-0">{% trans "Portfolio | All rights reserved." %}</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
