@@ -1,9 +1,48 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load static %}
 
 {% block title %} {% trans "Projects | EnisBuğraBulut" %} {% endblock title %}
 
+{% block projects_css %}
+    <link href="{% static 'core/css/projects.css' %}" rel="stylesheet">
+{% endblock projects_css %}
+
 {% block content %}
-    <h1 class="display-3 fw-bold">Merhaba, Ben Enis.</h1>
-    <p class="lead">Burası projelerimin olacağı yer.</p>
+    <div class="main-container">
+        <div class="post-wrapper">
+            {% for project in projects %}
+            <div class="project-card">
+                <div class="thumbnail-wrapper">
+                    {% if project.thumbnail %}
+                        <img class="thumbnail" src="{{ project.thumbnail.url }}">
+                    {% else %}
+                        <div class="no-image">No Image</div>
+                    {% endif %}
+                </div>
+                
+                <div class="project-preview">
+                    <h5 class="project-title">{{ project.headline }}</h5>
+                    <p class="project-intro">{{ project.sub_headline }}</p>
+                    
+                    {% if project.github_link %}
+                        <a href="{{ project.github_link }}" target="_blank" class="github-link">
+                            <i class="bi bi-github"></i> {% trans "See more detail on GitHub" %}
+                        </a>
+                    {% else %}
+                        <span class="no-link-text">{% trans "No link available" %}</span>
+                    {% endif %}
+
+                    <div class="tags-container">
+                        {% for tag in project.tags.all %}
+                            <span class="tag-pill">{{ tag.name }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+                <h3 class="text-center">{% trans "No projects to show yet." %}</h3>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock content %}

@@ -1,0 +1,166 @@
+/* --- Proje Izgara Yapısı --- */
+.post-wrapper {
+    display: grid;
+    /* Kartların genişliğini 280px ile 320px arasında kısıtlıyoruz */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); 
+    max-width: 1400px; /* 4 kart yan yana gelince sığacak alan */
+    margin: 0 auto;
+    gap: 30px;
+    /* Kartların bulunduğu tüm grubu yatayda ortalar */
+    justify-content: center; 
+    padding: 20px;
+}
+
+@media (min-width: 1200px) {
+    .post-wrapper {
+        /* 4 sütun limitini koruyoruz ama auto-fit sayesinde 
+           3 kart varsa 3 sütunmuş gibi davranıp ortalar */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); 
+        /* Maksimum 4 kartın genişliği + gapler kadar bir genişlik veriyoruz */
+        max-width: calc(320px * 4 + 30px * 3 + 40px);
+    }
+}
+
+/* --- Kart Genel Yapısı --- */
+.project-card {
+    background-color: #ffffff; /* Kartın ana gövdesi beyaz */
+    border: 1px solid #e1e4e8;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #17a2b8;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* --- Görsel Alanı (Üst Kısım) --- */
+.thumbnail-wrapper {
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    background-color: #f1f3f5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no-image {
+    color: #adb5bd;
+    font-weight: 600;
+}
+
+/* --- Metin Alanı (Headline & Subheadline - BURASI ELİT RENK) --- */
+.project-preview {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    
+    /* Gündüz modunda alt kısmı ayıran o özel soft renk */
+    background-color: #f9fbfd; 
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Gece Modu için Metin Alanı Renk Ayarı */
+body.dark-mode .project-preview {
+    background-color: #1c2128;
+    border-top: 1px solid #30363d;
+}
+
+/* Başlık ve Alt Başlık Font Renkleri */
+.project-title {
+    color: #24292e !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+body.dark-mode .project-title {
+    color: #adbac7 !important;
+}
+
+.project-intro {
+    color: #586069;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .project-intro {
+    color: #768390;
+}
+
+/* --- GitHub Linki --- */
+.github-link {
+    color: #17a2b8 !important; /* See more detail rengi */
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.github-link:hover {
+    opacity: 0.7;
+}
+
+.no-link-text {
+    color: #adb5bd;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+/* --- Neon Tag'ler (Eski Tarz) --- */
+.tags-container {
+    margin-top: auto; 
+    padding-top: 10px;
+}
+
+.tag-pill {
+    display: inline-block;
+    /* Neon efekti için transparan turkuaz arka plan */
+    background: rgba(23, 162, 184, 0.08); 
+    color: #17a2b8; 
+    padding: 5px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    margin: 3px;
+    font-weight: 600;
+    border: 1px solid rgba(23, 162, 184, 0.25);
+    transition: 0.3s ease;
+}
+
+.tag-pill:hover {
+    background: rgba(23, 162, 184, 0.15);
+    border-color: #17a2b8;
+}
+
+/* --- Gece Modu Kart Genel --- */
+body.dark-mode .project-card {
+    background-color: #22272e;
+    border-color: #444c56;
+}
+
+/* Mobil Düzenleme */
+@media (max-width: 480px) {
+    .post-wrapper {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+}
