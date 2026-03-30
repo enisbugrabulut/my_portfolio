@@ -13,6 +13,8 @@
     <link href="{% static 'core/css/cover.css' %}" rel="stylesheet">
     {% block about_css %}{% endblock about_css %}
     {% block projects_css %}{% endblock projects_css %}
+    {% block contact_css %}{% endblock contact_css %}
+    {% block 404_css %}{% endblock 404_css %}
     
 </head>
 
@@ -49,7 +51,7 @@
                             </div>
                             <form action="{% url 'set_language' %}" method="POST" class="d-flex">
                                 {% csrf_token %}
-                                <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                                <input name="next" type="hidden" value="{% if request.resolver_match %}{{ request.get_full_path }}{% else %}/{% endif %}">
                                 <div class="btn-group btn-group-sm">
                                     <button type="submit" name="language" value="en" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'en' %}active{% endif %}">EN</button>
                                     <button type="submit" name="language" value="tr" class="btn btn-outline-secondary {% if LANGUAGE_CODE == 'tr' %}active{% endif %}">TR</button>

@@ -1,9 +1,51 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load static %}
 
 {% block title %} {% trans "Contact | EnisBuğraBulut" %} {% endblock title %}
 
+{% block contact_css %}
+    <link rel="stylesheet" href="{% static 'core/css/contact.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+{% endblock contact_css %}
+
 {% block content %}
-    <h1 class="display-3 fw-bold">Merhaba, Ben Enis.</h1>
-    <p class="lead">Burası benimle iletişim kuracağınız yer.</p>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>{% trans "Contact Me" %}</h1>
+            <p>{% trans "You can always reach me out to discuss new projects, collaborations, or just to say hello." %}</p>
+        </div>
+
+        <div class="contact-cards">
+            <a href="mailto:enisbugra217@gmail.com" class="contact-card">
+                <div class="icon-box">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <span>{% trans "E-mail" %}</span>
+                    <p>enisbugra217@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://instagram.com/enisbbulut" target="_blank" class="contact-card">
+                <div class="icon-box">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="info">
+                    <span>Instagram</span>
+                    <p>@enisbbulut</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/enisbugrabulut" target="_blank" class="contact-card">
+                <div class="icon-box">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="info">
+                    <span>GitHub</span>
+                    <p>enisbugrabulut</p>
+                </div>
+            </a>
+        </div>
+    </div>
 {% endblock content %}

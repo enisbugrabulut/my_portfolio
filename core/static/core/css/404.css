@@ -1,0 +1,51 @@
+/* 404 Sayfası Özel Stilleri */
+
+.error-wrapper {
+    min-height: 65vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.error-robot {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: inline-block;
+    animation: floatRobot 3s ease-in-out infinite;
+}
+
+/* Robotun süzülme animasyonu */
+@keyframes floatRobot {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.error-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.error-text {
+    font-size: 1.1rem;
+    max-width: 450px;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.error-btn {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .error-robot { font-size: 4rem; }
+    .error-title { font-size: 2.5rem; }
+    .error-wrapper { min-height: 50vh; }
+}

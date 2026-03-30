@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-13 04:48+0300\n"
+"POT-Creation-Date: 2026-03-30 03:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Enis Buğra Bulut <enisbugra217@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,7 @@ msgid ""
 "together efficiently, optimally, and in harmony behind the scenes.\n"
 "                "
 msgstr ""
+"\n"
 "Merhaba! Ben Enis. Teknolojiye olan merakı küçük yaşlarda video oyunları ve "
 "bilgisayar parçalarını söküp takarak başlayan, bugün ise bu merakını dijital "
 "dünyada modern çözümler üretmeye dönüştüren bir yazılım geliştiriciyim. "
@@ -60,6 +61,7 @@ msgid ""
 "an opportunity to learn something new and push my boundaries.\n"
 "                "
 msgstr ""
+"\n"
 "Geliştirme sürecinde temiz kod (clean code) prensiplerine, sürdürülebilir ve "
 "ölçeklenebilir mimarilere büyük önem veriyorum. Backend tarafındaki karmaşık "
 "mantıkları, frontend tarafında sade ve zarif tasarımlarla buluşturmak en "
@@ -77,6 +79,7 @@ msgid ""
 "                to complex problems.\n"
 "                "
 msgstr ""
+"\n"
 "Bireysel olarak kod yazmanın dışında, sürekli değişen teknolojik trendleri "
 "takip etmeyi, başkaları tarafından yazılan kodları incelemeyi, dökümantasyon "
 "okumayı seviyorum. Vizyonum, karmaşık sorunlara basit ve etkili çözümler "
@@ -169,7 +172,7 @@ msgstr "İngilizce Hazırlık (1 Yıl)"
 #: .\core\templates\core\about.html:100
 #, python-format
 msgid "B.Sc. in Computer Engineering (%%100 English)"
-msgstr "Bilgisayar Mühendisliği Lisans Bölümü (%100 İngilizce)"
+msgstr "Bilgisayar Mühendisliği Lisans Bölümü (%%100 İngilizce)"
 
 #: .\core\templates\core\about.html:106
 msgid "Google Academy of Artificial Intelligence and Technology"
@@ -233,9 +236,25 @@ msgstr ""
 "Siber güvenlik eğitim programları kapsamında düzenlenen kapsamlı bir eğitim "
 "ve uygulama kampına katıldım."
 
-#: .\core\templates\core\contact.html:4
+#: .\core\templates\core\contact.html:5
 msgid "Contact | EnisBuğraBulut"
 msgstr "İletişim | EnisBuğraBulut"
+
+#: .\core\templates\core\contact.html:15
+msgid "Contact Me"
+msgstr "Bana Ulaşın"
+
+#: .\core\templates\core\contact.html:16
+msgid ""
+"You can always reach me out to discuss new projects, collaborations, or just "
+"to say hello."
+msgstr ""
+"Yeni projeler, iş birlikleri hakkında konuşmak veya sadece merhaba demek "
+"için her zaman benimle iletişime geçebilirsiniz."
+
+#: .\core\templates\core\contact.html:25
+msgid "E-mail"
+msgstr "E-posta"
 
 #: .\core\templates\core\home.html:4
 msgid "Home | EnisBuğraBulut"
@@ -269,35 +288,39 @@ msgstr "Link mevcut değil"
 msgid "No projects to show yet."
 msgstr "Henüz gösterilecek bir proje yok."
 
-#: .\templates\404.html:6
-msgid "404"
-msgstr ""
+#: .\templates\404.html:5
+msgid "404 Page | EnisBuğraBulut"
+msgstr "404 Sayfası | EnisBuğraBulut"
 
-#: .\templates\404.html:7
+#: .\templates\404.html:20
+msgid "404"
+msgstr "404"
+
+#: .\templates\404.html:23
 msgid "The page you are looking for may not exist or might have been moved."
 msgstr "Aradığınız sayfa mevcut değil veya taşınmış olabilir."
 
-#: .\templates\404.html:9
+#: .\templates\404.html:28
 msgid "Return to Home"
 msgstr "Ana Sayfaya Dön"
 
-#: .\templates\base.html:39
+#: .\templates\base.html:41
 msgid "Home"
 msgstr "Ana Sayfa"
 
-#: .\templates\base.html:40
+#: .\templates\base.html:42
 msgid "About"
 msgstr "Hakkımda"
 
-#: .\templates\base.html:41
+#: .\templates\base.html:43
 msgid "Projects"
 msgstr "Projeler"
 
-#: .\templates\base.html:42
+#: .\templates\base.html:44
 msgid "Contact"
 msgstr "İletişim"
 
-#: .\templates\base.html:74
+#: .\templates\base.html:76
 msgid "Portfolio | All rights reserved."
 msgstr "Portfolio | Tüm hakları saklıdır."
 
@@ -1545,18 +1568,3 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
 msgid "Connect, get help, or contribute"
 msgstr ""
-
-#~ msgid "Page Not Found"
-#~ msgstr "Sayfa Bulunamadı"
-
-#~ msgid "Welcome to my portfolio that has been made with Django."
-#~ msgstr "Django ile hazırladığım portfolyo siteme hoş geldiniz."
-
-#~ msgid "See My Projects"
-#~ msgstr "Projelerimi Gör"
-
-#~ msgid "Merhaba, Ben Enis."
-#~ msgstr "Hello, I am Enis."
-
-#~ msgid "Projelerimi Gör"
-#~ msgstr "See My Projects"

@@ -1,7 +1,7 @@
 /* --- Proje Izgara Yapısı --- */
 .post-wrapper {
     display: grid;
-    /* Kartların genişliğini 280px ile 320px arasında kısıtlıyoruz */
+    /* Kartların genişliği 280px ile 320px arasında */
     grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); 
     max-width: 1400px; /* 4 kart yan yana gelince sığacak alan */
     margin: 0 auto;
@@ -13,17 +13,16 @@
 
 @media (min-width: 1200px) {
     .post-wrapper {
-        /* 4 sütun limitini koruyoruz ama auto-fit sayesinde 
-           3 kart varsa 3 sütunmuş gibi davranıp ortalar */
+        /* 4 sütun limitini koruyoruz ama 4'den az için auto-fit  */
         grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); 
-        /* Maksimum 4 kartın genişliği + gapler kadar bir genişlik veriyoruz */
+        /* max 4 kartın genişliği + gapler */
         max-width: calc(320px * 4 + 30px * 3 + 40px);
     }
 }
 
 /* --- Kart Genel Yapısı --- */
 .project-card {
-    background-color: #ffffff; /* Kartın ana gövdesi beyaz */
+    background-color: #ffffff;
     border: 1px solid #e1e4e8;
     border-radius: 20px;
     overflow: hidden;
@@ -40,7 +39,6 @@
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-/* --- Görsel Alanı (Üst Kısım) --- */
 .thumbnail-wrapper {
     width: 100%;
     height: 200px;
@@ -63,7 +61,7 @@
     font-weight: 600;
 }
 
-/* --- Metin Alanı (Headline & Subheadline - BURASI ELİT RENK) --- */
+/* --- Metin Alanı (Headline & Subheadline) --- */
 .project-preview {
     padding: 25px;
     display: flex;
@@ -71,8 +69,6 @@
     align-items: center;
     text-align: center;
     flex-grow: 1;
-    
-    /* Gündüz modunda alt kısmı ayıran o özel soft renk */
     background-color: #f9fbfd; 
     border-top: 1px solid #f0f0f0;
 }

@@ -1,11 +1,33 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load static %}
+
+{% block title %} {% trans "404 Page | EnisBuğraBulut" %} {% endblock title %}
+
+{% block 404_css %}
+    <link rel="stylesheet" href="{% static 'core/css/404.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+{% endblock 404_css %}
 
 {% block content %}
-    <h1 class="display-3 fw-bold typewriter"></h1>
-    <span id="typewriter-source" hidden>{% trans "404" %}</span>
-    <p class="lead fade-in">{% trans "The page you are looking for may not exist or might have been moved." %}</p>
-    <div class="d-flex justify-content-center">
-        <a href="{% url 'core:home' %}" class="btn custom-portfolio-btn fade-in">{% trans "Return to Home" %}</a>
+    <div class="container error-wrapper">
+        
+        <div class="error-icon error-robot">
+            <i class="fas fa-robot"></i>
+        </div>
+
+        <h1 class="error-title typewriter"></h1>
+        <span id="typewriter-source" hidden>{% trans "404" %}</span>
+        
+        <p class="error-text fade-in">
+            {% trans "The page you are looking for may not exist or might have been moved." %}
+        </p>
+
+        <div class="fade-in">
+            <a href="{% url 'core:home' %}" class="btn custom-portfolio-btn error-btn">
+                {% trans "Return to Home" %}
+            </a>
+        </div>
+
     </div>
 {% endblock content %}

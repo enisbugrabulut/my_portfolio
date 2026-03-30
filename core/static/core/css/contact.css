@@ -1,0 +1,103 @@
+.contact-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #2d3436;
+}
+
+body.dark-mode .contact-header h1 {
+    color: #f0f6fc;
+}
+
+.contact-header p {
+    color: #636e72;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+body.dark-mode .contact-header p {
+    color: #8b949e;
+}
+
+/* Kart Yapısı */
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 30px;
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .contact-card {
+    background: #161b22;
+    border-color: #30363d;
+}
+
+.contact-card:hover {
+    transform: translateX(10px);
+    border-color: #17a2b8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* İkon Kutusu */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: rgba(23, 162, 184, 0.1);
+    color: #17a2b8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.info {
+    text-align: left;
+}
+
+.info span {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #b2bec3;
+    letter-spacing: 1px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+body.dark-mode .info p {
+    color: #adbac7;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 600px) {
+    .contact-header h1 { font-size: 2rem; }
+    .contact-card { padding: 15px 20px; }
+}
